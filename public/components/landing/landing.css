@@ -1,0 +1,9 @@
+.core-chat-container {
+	height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+.talkjs-container {
+    height: 100%;
+}
