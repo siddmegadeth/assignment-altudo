@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
 <script src="plugins/intl-tel-input-master/build/js/intlTelInput.min.js" type="text/javascript" charset="utf-8" ></script>
-
 <script src="plugins/intl-tel-input-master/build/js/utils.js" type="text/javascript" charset="utf-8" ></script>
 	<script src="services/talk.js" type="text/javascript" charset="utf-8" ></script>
 	<link rel="stylesheet" type="text/css" href="plugins/intl-tel-input-master/build/css/intlTelInput.min.css">
@@ -18,6 +16,8 @@
 	<link rel="stylesheet" type="text/css" href="components/global/onsen-overwrite.css">
 	<link rel="stylesheet" type="text/css" href="components/global/onsen-overwrite-dark.css">
 	<link rel="stylesheet" type="text/css" href="components/global/onsen-overwrite-light.css">
+	<link rel="stylesheet" type="text/css" href="components/profile-completion/profile-completion.css">
+
 	</style>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +25,7 @@
 	<base href="/">
 </head>
 <body ng-app="myApp">
-	<ons-navigator var="myNavigator" page="verify.html"></ons-navigator>
+	<ons-navigator var="myNavigator" page="profile-completion.html"></ons-navigator>
 	
 	<!-- This template veriffy user genrated data integrtity, user login and permission before login -->
 	<template id="verify.html">
@@ -88,6 +88,26 @@
 				</div>
 			</ons-toolbar>
 			  <ons-progress-bar indeterminate ng-if="isProfileCompletionLoading"></ons-progress-bar>
+			  <ons-card class='card-images card-align'>
+			  	<ons-icon icon="fa-camera"></ons-icon>
+			  <div class="completion-image-container">
+			  	<div class="center-image">
+			  		<img src="https://image.shutterstock.com/image-photo/portrait-positive-japanese-female-classic-600w-1568822275.jpg" class="image-completion">
+			  	</div>
+			  </div>
+			  <div class="form-container">
+			  	<ons-list-item>
+			  		<ons-input placeholder="Provide Your Name" float modifier="underbar" class="full-width" ng-model="fullName"></ons-input>
+			  	</ons-list-item>
+			  	<!--   	<ons-list-item>
+			  		<ons-button ng-click="getLocation()" modifier="large">Grant Permission To Location</ons-button>
+			  	</ons-list-item> -->
+			  		<ons-list-item>
+			  		<ons-button ng-click="updateProfile(fullName)" modifier="large">Update And Continue</ons-button>
+			  	</ons-list-item>
+			
+			  </div>
+			 </ons-card>
 			<ons-toast var="profileCompletionToast" ng-controller="profileCompletionCtrl" cancelable>
 			  {{toastMessage}}<button ng-click="profileCompletionToast.hide();">Dismiss</button>
 			</ons-toast>

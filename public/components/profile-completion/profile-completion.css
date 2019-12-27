@@ -1,0 +1,38 @@
+.card-images {
+	padding: 0;
+    margin: 0;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.completion-image-container{
+	width: 100%;
+	text-align :  center;
+}
+
+img.image-completion{
+	width: 100%;
+    /* margin: auto 0; */
+    text-align: center;
+    border-radius: 100%;
+    height: 200px;
+    border: 3px dashed #607D8B;
+}
+
+.center-image {
+	width: 60%;
+    height: 100%;
+    margin: 0;
+    height: 100%;
+    display: inline-block;
+}
+
+.card-align {
+	top: 1%;
+    position: relative;
+    width: 96%;
+    padding: 0;
+    left: 2%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+}

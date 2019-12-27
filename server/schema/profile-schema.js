@@ -1,14 +1,14 @@
 (function() {
 
 	ProfileSchema = mongoose.Schema({
-		username: {
+		user_name: {
 			type: String,
 			unique: true,
 		},
 		email: {
 			type: String,
 		},
-		fullName: {
+		full_name: {
 			type: String,
 		},
 		display_picture: {
@@ -27,6 +27,9 @@
 		isProfileCompleted: {
 			type: Boolean,
 			deafult: false
+		},
+		about_myself: {
+			type: String,
 		}
 	});
 
