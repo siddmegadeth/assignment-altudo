@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="plugins/intl-tel-input-master/build/js/intlTelInput.min.js" type="text/javascript" charset="utf-8" ></script>
-<script src="plugins/intl-tel-input-master/build/js/utils.js" type="text/javascript" charset="utf-8" ></script>
+	<script src="plugins/talkjs.min.js" type="text/javascript" charset="utf-8" ></script>
+	<script src="plugins/intl-tel-input-master/build/js/intlTelInput.min.js" type="text/javascript" charset="utf-8" ></script>
+	<script src="plugins/intl-tel-input-master/build/js/utils.js" type="text/javascript" charset="utf-8" ></script>
 	<script src="services/talk.js" type="text/javascript" charset="utf-8" ></script>
 	<link rel="stylesheet" type="text/css" href="plugins/intl-tel-input-master/build/css/intlTelInput.min.css">
 	<link rel="stylesheet" type="text/css" href="plugins/OnsenUI-dist-2.10.10/css/onsenui-core.min.css">
@@ -17,7 +18,6 @@
 	<link rel="stylesheet" type="text/css" href="components/global/onsen-overwrite-dark.css">
 	<link rel="stylesheet" type="text/css" href="components/global/onsen-overwrite-light.css">
 	<link rel="stylesheet" type="text/css" href="components/profile-completion/profile-completion.css">
-
 	</style>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -89,7 +89,7 @@
 			</ons-toolbar>
 			  <ons-progress-bar indeterminate ng-if="isProfileCompletionLoading"></ons-progress-bar>
 			  <ons-card class='card-images card-align'>
-			  	<ons-icon icon="fa-camera"></ons-icon>
+			  	<a href class="photo-change" ng-click="changeDisplayPicture()"><ons-icon icon="fa-camera"></ons-icon></a>
 			  <div class="completion-image-container">
 			  	<div class="center-image">
 			  		<img src="https://image.shutterstock.com/image-photo/portrait-positive-japanese-female-classic-600w-1568822275.jpg" class="image-completion">

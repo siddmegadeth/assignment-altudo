@@ -3,8 +3,6 @@ app.controller("profileCompletionCtrl", ['$scope', '$timeout', function($scope, 
 
 	$scope.updateProfile = function(fullName) {
 
-		log(fullName);
-		log(fullName.length);
 		if (fullName == undefined || fullName.length == 0) {
 			ons.notification.toast({
 				message: 'Please Provide Your Name',
@@ -22,14 +20,25 @@ app.controller("profileCompletionCtrl", ['$scope', '$timeout', function($scope, 
 				message: 'updating......',
 				timeout: 2000,
 				buttonLabel: 'Dismiss'
-			}).then(function()
-			{
+			}).then(function() {
 				log("Updating....");
 
 			});
-
-
 		}
-	}
+	};
+
+	$scope.changeDisplayPicture = function() {
+
+		ons.notification.toast({
+			message: 'Changing Display Picture',
+			timeout: 2000,
+			buttonLabel: 'Dismiss'
+		}).then(function() {
+			log("Updating....");
+
+		});
+
+
+	};
 
 }]);
