@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Bootstrap and winDevice, Font awesome Core Files-->
+    <!-- Custom Material Design geenrated Using LESS  https://www.github.com/siddmegadeth/winDevice -->
+    <script src="plugins/winDevice.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- Custom Material Design geenrated Using LESS  https://www.github.com/siddmegadeth -->
+    <link rel="stylesheet" type="text/css" href="plugins/bootstrap-paper.min.css">
+    <link rel="stylesheet" type="text/css" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- 2rd Part Reference -->
+    <script src="plugins/intl-tel-input-master/build/js/intlTelInput.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="plugins/intl-tel-input-master/build/js/utils.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" type="text/css" href="plugins/intl-tel-input-master/build/css/intlTelInput.min.css">
+    <link rel="stylesheet" type="text/css" href="plugins/intl-tel-input-master/build/css/intlTelInput.min.css">
+    <!-- Components CSS -->
+    <link rel="stylesheet" type="text/css" href="components/login/login.css">
+    <link rel="stylesheet" type="text/css" href="components/landing/landing.css">
+    <link rel="stylesheet" type="text/css" href="components/navbar/navbar.css">
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Assignment</title>
+    <base href="/">
+</head>
+<body ng-controller="globalCtrl" ng-cloak>
+    <div ng-include="'components/navbar/navbar.html'" ng-if="showNavbar"></div>
+    <div class="section">
+        <div ng-view></div>
+    </div>
+</body>
+<!-- Core Framework API -->
+<script src="plugins/angular-1.7.9/angular.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="plugins/angular-1.7.9/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="plugins/angular-1.7.9/angular-messages.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="plugins/ngf-upload.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="plugins/ui-bootstrap-tpls-2.5.0.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="plugins/auto-validate.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="init.js" type="text/javascript" charset="utf-8"></script>
+<!-- Controllers -->
+<script src="components/global/globalCtrl.js" type="text/javascript" charset="utf-8"></script>
+<script src="components/landing/landingCtrl.js" type="text/javascript" charset="utf-8"></script>
+<script src="components/login/loginCtrl.js" type="text/javascript" charset="utf-8"></script>
+<script src="components/not-found/notFoundCtrl.js" type="text/javascript" charset="utf-8"></script>
+<!-- Services -->
+<script src="services/rest-services.js" type="text/javascript" charset="utf-8"></script>
+<script src="components/global/services.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

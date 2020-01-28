@@ -1,5 +1,5 @@
 {
-  "name": "chatup",
+  "name": "altudo-assignment",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -21,5 +21,10 @@
     "rethinkdbdash": "^2.3.31"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://siddharth_chandra@bitbucket.org/siddharth_chandra/near-chat.git"
+  },
+  "homepage": "https://bitbucket.org/siddharth_chandra/near-chat#readme",
   "description": ""
 }
